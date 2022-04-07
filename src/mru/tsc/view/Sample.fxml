@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="862.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="511.0" prefWidth="862.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="640.0">
+                     <children>
+                        <Button fx:id="btnClear" layoutX="190.0" layoutY="319.0" mnemonicParsing="false" text="Clear" />
+                        <Button fx:id="btnSearch" layoutX="79.0" layoutY="319.0" mnemonicParsing="false" text="Search" />
+                        <Button fx:id="btnBuy" layoutX="595.0" layoutY="394.0" mnemonicParsing="false" text="Buy" />
+                        <ListView fx:id="lsHome" layoutX="324.0" layoutY="50.0" prefHeight="316.0" prefWidth="530.0" />
+                        <TextField fx:id="enterSN" layoutX="159.0" layoutY="147.0" />
+                        <TextField fx:id="enterType" layoutX="159.0" layoutY="272.0" />
+                        <TextField fx:id="enterName" layoutX="159.0" layoutY="195.0" />
+                        <Label layoutX="29.0" layoutY="147.0" prefHeight="43.0" prefWidth="123.0" text="Serial Number (SN)" />
+                        <Label layoutX="30.0" layoutY="205.0" prefHeight="44.0" prefWidth="101.0" text="Name" />
+                        <Label layoutX="29.0" layoutY="267.0" prefHeight="36.0" prefWidth="91.0" text="Type" />
+                        <Label layoutX="32.0" layoutY="9.0" prefHeight="29.0" prefWidth="791.0" text="Welcom To The Toy Store Company" />
+                        <Label layoutX="29.0" layoutY="56.0" prefHeight="37.0" prefWidth="260.0" text="Search Inventory" />
+                        <RadioButton fx:id="radioSN" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="122.0" text="Serial Number" />
+                        <RadioButton fx:id="radioType" layoutX="235.0" layoutY="104.0" mnemonicParsing="false" text="Type" />
+                        <RadioButton fx:id="radioName" layoutX="146.0" layoutY="104.0" mnemonicParsing="false" text="Name" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add Toy">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="124.0" layoutY="283.0" />
+                        <TextField layoutX="124.0" layoutY="354.0" />
+                        <TextField layoutX="124.0" layoutY="318.0" />
+                        <TextField layoutX="124.0" layoutY="242.0" />
+                        <TextField layoutX="124.0" layoutY="166.0" />
+                        <TextField layoutX="123.0" layoutY="199.0" />
+                        <TextField layoutX="415.0" layoutY="116.0" />
+                        <TextField layoutX="396.0" layoutY="314.0" />
+                        <TextField layoutX="698.0" layoutY="380.0" prefHeight="26.0" prefWidth="142.0" />
+                        <TextField layoutX="781.0" layoutY="336.0" prefHeight="26.0" prefWidth="55.0" />
+                        <TextField layoutX="780.0" layoutY="297.0" prefHeight="26.0" prefWidth="56.0" />
+                        <TextField layoutX="676.0" layoutY="152.0" />
+                        <TextField layoutX="676.0" layoutY="113.0" />
+                        <ChoiceBox layoutX="125.0" layoutY="123.0" prefWidth="150.0" />
+                        <Label layoutX="616.0" layoutY="164.0" prefHeight="23.0" prefWidth="43.0" text="Size" />
+                        <Label layoutX="600.0" layoutY="380.0" prefHeight="31.0" prefWidth="76.0" text="Designers" />
+                        <Label layoutX="17.0" layoutY="352.0" prefHeight="29.0" prefWidth="99.0" text="Age-appropriate" />
+                        <Label layoutX="308.0" layoutY="125.0" prefHeight="23.0" prefWidth="87.0" text="Classification" />
+                        <Label layoutX="612.0" layoutY="127.0" text="Material" />
+                        <Label layoutX="19.0" layoutY="126.0" prefHeight="26.0" prefWidth="89.0" text="Catagory" />
+                        <Label layoutX="321.0" layoutY="314.0" prefHeight="26.0" prefWidth="62.0" text="Type" />
+                        <Label layoutX="18.0" layoutY="163.0" prefHeight="31.0" prefWidth="111.0" text="Serial Number" />
+                        <Label layoutX="600.0" layoutY="340.0" prefHeight="24.0" prefWidth="175.0" text="Maximum Number of Players" />
+                        <Label layoutX="15.0" layoutY="311.0" prefHeight="33.0" prefWidth="97.0" text="Available-count" />
+                        <Label layoutX="599.0" layoutY="309.0" text="Minimum Number of Players" />
+                        <Label layoutX="17.0" layoutY="278.0" prefHeight="36.0" prefWidth="80.0" text="Price" />
+                        <Label layoutX="17.0" layoutY="238.0" prefHeight="34.0" prefWidth="80.0" text="Brand" />
+                        <Label layoutX="18.0" layoutY="194.0" prefHeight="35.0" prefWidth="78.0" text="Name" />
+                        <Label layoutX="32.0" layoutY="44.0" prefHeight="48.0" prefWidth="258.0" text="Enter New Toy Information" />
+                        <Label layoutX="441.0" layoutY="81.0" prefHeight="25.0" prefWidth="62.0" text="Figure" />
+                        <Label layoutX="430.0" layoutY="272.0" prefHeight="33.0" prefWidth="85.0" text="Puzzle" />
+                        <Label layoutX="678.0" layoutY="68.0" prefHeight="43.0" prefWidth="82.0" text="Animal" />
+                        <Label layoutX="719.0" layoutY="257.0" text="Board Game" />
+                        <Button layoutX="50.0" layoutY="400.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="211.0" text="Save" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Remove Toy">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="640.0">
+                     <children>
+                        <Button layoutX="60.0" layoutY="323.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="116.0" text="Remove" />
+                        <ListView layoutX="324.0" layoutY="6.0" prefHeight="437.0" prefWidth="531.0" />
+                        <TextField layoutX="159.0" layoutY="161.0" />
+                        <Label layoutX="22.0" layoutY="152.0" prefHeight="43.0" prefWidth="123.0" text="Serial Number (SN)" />
+                        <Label layoutX="22.0" layoutY="71.0" prefHeight="37.0" prefWidth="260.0" text="Enter Toy Serial Number" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
