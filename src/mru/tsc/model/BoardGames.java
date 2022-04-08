@@ -40,7 +40,7 @@ public class BoardGames extends Toy{
 	 * toString method for the board games class
 	 */
 	public String toString() { 
-	    return "SN: " + this.sN + " , Name: " + this.name + " , Brand: " + this.brand + " , Price: " + this.price + " , Amount Available: " + this.count + " , Age: " + this.age + " , Number of Players: " + this.plyMin +  "-" + this.plyMax  + " , Designers: " + this.designers;
+	    return "Category: BoardGames, SN: " + this.sN + " , Name: " + this.name + " , Brand: " + this.brand + " , Price: " + this.price + " , Amount Available: " + this.count + " , Age: " + this.age + " , Number of Players: " + this.plyMin +  "-" + this.plyMax  + " , Designers: " + this.designers;
 	} 
 	
 	/**

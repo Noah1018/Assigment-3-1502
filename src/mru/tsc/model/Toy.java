@@ -126,5 +126,9 @@ public abstract class Toy {
 	public String format() {
 		return sN + ";" + name + ";" + brand + ";" + price + ";" + count + ";" + age;
 	}
+	
+	public String formatTwo() {
+		return "";
+	}
 
 }

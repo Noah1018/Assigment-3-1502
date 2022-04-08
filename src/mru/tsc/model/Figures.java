@@ -34,7 +34,7 @@ public class Figures extends Toy {
 	 * toString method for the figures class
 	 */
 	public String toString() { 
-	    return "SN: " + this.sN + " , Name: " + this.name + " , Brand: " + this.brand + " , Price: " + this.price + " , Amount Available: " + this.count + " , Age: " + this.age + " , Classification: " + this.classification;
+	    return "Category: Figures, SN: " + this.sN + " , Name: " + this.name + " , Brand: " + this.brand + " , Price: " + this.price + " , Amount Available: " + this.count + " , Age: " + this.age + " , Classification: " + this.classification;
 	} 
 	
 	/**

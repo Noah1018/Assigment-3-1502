@@ -1,4 +1,4 @@
-package mru.tsc.controller;
+package mru.tsc.exceptions;
 
 public class TSCException extends Exception{
 	
@@ -18,7 +18,7 @@ public class TSCException extends Exception{
 	 * toString method
 	 */
 	public String toString() {
-		return "Invalid Social Security Number, " +error; 
+		return "ERROR: " +error; 
 	    }
 	}
 

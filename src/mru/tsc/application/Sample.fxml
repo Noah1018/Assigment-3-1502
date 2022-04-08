@@ -9,9 +9,9 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="862.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="862.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mru.tsc.controller.AppManager">
    <children>
       <TabPane prefHeight="511.0" prefWidth="862.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -19,10 +19,10 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="640.0">
                      <children>
-                        <Button fx:id="btnClear" layoutX="190.0" layoutY="319.0" mnemonicParsing="false" text="Clear" />
-                        <Button fx:id="btnSearch" layoutX="79.0" layoutY="319.0" mnemonicParsing="false" text="Search" />
-                        <Button fx:id="btnBuy" layoutX="595.0" layoutY="394.0" mnemonicParsing="false" text="Buy" />
-                        <ListView fx:id="lsHome" layoutX="324.0" layoutY="50.0" prefHeight="316.0" prefWidth="530.0" />
+                        <Button fx:id="btnClear" layoutX="190.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnHandler" text="Clear" />
+                        <Button fx:id="btnSearch" layoutX="79.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnHandler" text="Search" />
+                        <Button fx:id="btnBuy" layoutX="595.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnHandler" text="Buy" />
+                        <ListView fx:id="lsHome" layoutX="324.0" layoutY="69.0" prefHeight="316.0" prefWidth="530.0" />
                         <TextField fx:id="enterSN" layoutX="159.0" layoutY="147.0" />
                         <TextField fx:id="enterType" layoutX="159.0" layoutY="272.0" />
                         <TextField fx:id="enterName" layoutX="159.0" layoutY="195.0" />
@@ -34,6 +34,11 @@
                         <RadioButton fx:id="radioSN" layoutX="14.0" layoutY="104.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="122.0" text="Serial Number" />
                         <RadioButton fx:id="radioType" layoutX="235.0" layoutY="104.0" mnemonicParsing="false" text="Type" />
                         <RadioButton fx:id="radioName" layoutX="146.0" layoutY="104.0" mnemonicParsing="false" text="Name" />
+                        <Button fx:id="btnSaveandExit3" layoutX="712.0" mnemonicParsing="false" onAction="#btnHandler" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: red; -fx-text-fill: black;" text="Save and Exit">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
             </content>
@@ -42,20 +47,20 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField layoutX="124.0" layoutY="283.0" />
-                        <TextField layoutX="124.0" layoutY="354.0" />
-                        <TextField layoutX="124.0" layoutY="318.0" />
-                        <TextField layoutX="124.0" layoutY="242.0" />
-                        <TextField layoutX="124.0" layoutY="166.0" />
-                        <TextField layoutX="123.0" layoutY="199.0" />
-                        <TextField layoutX="415.0" layoutY="116.0" />
-                        <TextField layoutX="396.0" layoutY="314.0" />
-                        <TextField layoutX="698.0" layoutY="380.0" prefHeight="26.0" prefWidth="142.0" />
-                        <TextField layoutX="781.0" layoutY="336.0" prefHeight="26.0" prefWidth="55.0" />
-                        <TextField layoutX="780.0" layoutY="297.0" prefHeight="26.0" prefWidth="56.0" />
-                        <TextField layoutX="676.0" layoutY="152.0" />
-                        <TextField layoutX="676.0" layoutY="113.0" />
-                        <ChoiceBox layoutX="125.0" layoutY="123.0" prefWidth="150.0" />
+                        <TextField fx:id="enterPrice" layoutX="124.0" layoutY="283.0" />
+                        <TextField fx:id="enterAgeApprop" layoutX="124.0" layoutY="354.0" />
+                        <TextField fx:id="enterCount" layoutX="124.0" layoutY="318.0" />
+                        <TextField fx:id="enterBrand" layoutX="124.0" layoutY="242.0" />
+                        <TextField fx:id="enterSN2" layoutX="124.0" layoutY="166.0" />
+                        <TextField fx:id="enterName2" layoutX="123.0" layoutY="199.0" />
+                        <TextField fx:id="enterClassification" layoutX="415.0" layoutY="116.0" />
+                        <TextField fx:id="enterType2" layoutX="396.0" layoutY="314.0" />
+                        <TextField fx:id="enterDesigners" layoutX="698.0" layoutY="380.0" prefHeight="26.0" prefWidth="142.0" />
+                        <TextField fx:id="enterMaxPlayers" layoutX="781.0" layoutY="336.0" prefHeight="26.0" prefWidth="55.0" />
+                        <TextField fx:id="enterMinPlayers" layoutX="780.0" layoutY="297.0" prefHeight="26.0" prefWidth="56.0" />
+                        <TextField fx:id="enterSize" layoutX="676.0" layoutY="152.0" />
+                        <TextField fx:id="enterMaterial" layoutX="676.0" layoutY="113.0" />
+                        <ChoiceBox fx:id="catagory" layoutX="125.0" layoutY="123.0" prefWidth="150.0" />
                         <Label layoutX="616.0" layoutY="164.0" prefHeight="23.0" prefWidth="43.0" text="Size" />
                         <Label layoutX="600.0" layoutY="380.0" prefHeight="31.0" prefWidth="76.0" text="Designers" />
                         <Label layoutX="17.0" layoutY="352.0" prefHeight="29.0" prefWidth="99.0" text="Age-appropriate" />
@@ -75,20 +80,31 @@
                         <Label layoutX="430.0" layoutY="272.0" prefHeight="33.0" prefWidth="85.0" text="Puzzle" />
                         <Label layoutX="678.0" layoutY="68.0" prefHeight="43.0" prefWidth="82.0" text="Animal" />
                         <Label layoutX="719.0" layoutY="257.0" text="Board Game" />
-                        <Button layoutX="50.0" layoutY="400.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="211.0" text="Save" />
+                        <Button fx:id="btnSave" layoutX="50.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnHandler" prefHeight="37.0" prefWidth="211.0" text="Save" />
+                        <Button fx:id="btnSaveandExit2" layoutX="723.0" mnemonicParsing="false" onAction="#btnHandler" prefHeight="56.0" prefWidth="140.0" style="-fx-background-color: red; -fx-text-fill: black;" text="Save and Exit">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
             <Tab text="Remove Toy">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="640.0">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="513.0" prefWidth="862.0">
                      <children>
-                        <Button layoutX="60.0" layoutY="323.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="116.0" text="Remove" />
-                        <ListView layoutX="324.0" layoutY="6.0" prefHeight="437.0" prefWidth="531.0" />
-                        <TextField layoutX="159.0" layoutY="161.0" />
+                        <Button fx:id="btnRemove" layoutX="187.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnHandler" prefHeight="43.0" prefWidth="116.0" text="Remove" />
+                        <ListView fx:id="lsRemove" layoutX="318.0" layoutY="46.0" prefHeight="393.0" prefWidth="530.0" />
+                        <TextField fx:id="enterSN3" layoutX="159.0" layoutY="161.0" />
                         <Label layoutX="22.0" layoutY="152.0" prefHeight="43.0" prefWidth="123.0" text="Serial Number (SN)" />
                         <Label layoutX="22.0" layoutY="71.0" prefHeight="37.0" prefWidth="260.0" text="Enter Toy Serial Number" />
+                        <Button fx:id="btnSaveandExit" layoutX="721.0" layoutY="-1.0" mnemonicParsing="false" onAction="#btnHandler" prefHeight="47.0" prefWidth="141.0" style="-fx-background-color: red; -fx-text-fill: black;" text="Save and Exit">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnSearch2" layoutX="26.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnHandler" prefHeight="43.0" prefWidth="116.0" text="Search" />
                      </children>
                   </AnchorPane>
                </content>

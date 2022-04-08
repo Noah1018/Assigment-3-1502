@@ -35,7 +35,7 @@ public class Puzzles extends Toy{
 	 * toString method for the puzzles class
 	 */
 	public String toString() { 
-	    return "SN: " + this.sN + " , Name: " + this.name + " , Brand: " + this.brand + " , Price: " + this.price + " , Amount Available: " + this.count + " , Age: " + this.age + " , Puzzle-Type: " + this.type;
+	    return "Category: Puzzles, SN: " + this.sN + " , Name: " + this.name + " , Brand: " + this.brand + " , Price: " + this.price + " , Amount Available: " + this.count + " , Age: " + this.age + " , Puzzle-Type: " + this.type;
 	} 
 	
 	/**
